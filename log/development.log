@@ -7718,3 +7718,103 @@ Rendering products/edit
   [4;35;1mPhoto Load (0.2ms)[0m   [0mSELECT * FROM "photos" WHERE ("photos".product_id = 31) [0m
 Rendered products/_photo (0.6ms)
 Completed in 23ms (View: 18, DB: 0) | 200 OK [http://localhost/products/31/edit]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-08-19 10:28:06) [GET]
+  [4;36;1mProduct Load (41.4ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 2511ms (View: 2428, DB: 41) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#edit (for 127.0.0.1 at 2010-08-19 10:28:24) [GET]
+  Parameters: {"id"=>"17"}
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 17) [0m
+Rendering template within layouts/products
+Rendering products/edit
+  [4;36;1mPhoto Load (0.2ms)[0m   [0;1mSELECT * FROM "photos" WHERE ("photos".product_id = 17) [0m
+Rendered products/_photo (0.9ms)
+Completed in 54ms (View: 50, DB: 0) | 200 OK [http://localhost/products/17/edit]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-08-19 10:28:25) [GET]
+  [4;35;1mProduct Load (20.0ms)[0m   [0mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 2388ms (View: 2346, DB: 20) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#edit (for 127.0.0.1 at 2010-08-19 10:28:29) [GET]
+  Parameters: {"id"=>"13"}
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 13) [0m
+Rendering template within layouts/products
+Rendering products/edit
+  [4;35;1mPhoto Load (0.2ms)[0m   [0mSELECT * FROM "photos" WHERE ("photos".product_id = 13) [0m
+Rendered products/_photo (0.5ms)
+Completed in 41ms (View: 37, DB: 0) | 200 OK [http://localhost/products/13/edit]
+
+
+Processing ProductsController#update (for 127.0.0.1 at 2010-08-19 10:29:10) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"RPljDxxZdhEXTR3wg9XAJYXcMN+lbZNLZ1jIh7rIuZQ=", "id"=>"13", "product"=>{"price"=>"5", "name"=>"Product7", "photos_attributes"=>{"1282206524949"=>{"data"=>#<File:/var/folders/Pv/Pv3o+h-EFNi7ulORQ5rgPE+++TQ/-Tmp-/RackMultipart20100819-492-hgc1q3-0>}, "1282206540677"=>{"data"=>#<File:/var/folders/Pv/Pv3o+h-EFNi7ulORQ5rgPE+++TQ/-Tmp-/RackMultipart20100819-492-17a3es6-0>}}}}
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 13) [0m
+[paperclip] identify -format %wx%h '/var/folders/Pv/Pv3o+h-EFNi7ulORQ5rgPE+++TQ/-Tmp-/stream,492,0.JPG[0]'
+[paperclip] convert '/var/folders/Pv/Pv3o+h-EFNi7ulORQ5rgPE+++TQ/-Tmp-/stream,492,0.JPG[0]' -resize '500x500>' '/var/folders/Pv/Pv3o+h-EFNi7ulORQ5rgPE+++TQ/-Tmp-/stream,492,0,492,0'
+[paperclip] identify -format %wx%h '/var/folders/Pv/Pv3o+h-EFNi7ulORQ5rgPE+++TQ/-Tmp-/stream,492,0.JPG[0]'
+[paperclip] convert '/var/folders/Pv/Pv3o+h-EFNi7ulORQ5rgPE+++TQ/-Tmp-/stream,492,0.JPG[0]' -resize '600x600>' '/var/folders/Pv/Pv3o+h-EFNi7ulORQ5rgPE+++TQ/-Tmp-/stream,492,0,492,1'
+[paperclip] identify -format %wx%h '/var/folders/Pv/Pv3o+h-EFNi7ulORQ5rgPE+++TQ/-Tmp-/stream,492,0.JPG[0]'
+[paperclip] convert '/var/folders/Pv/Pv3o+h-EFNi7ulORQ5rgPE+++TQ/-Tmp-/stream,492,0.JPG[0]' -resize '800x800>' '/var/folders/Pv/Pv3o+h-EFNi7ulORQ5rgPE+++TQ/-Tmp-/stream,492,0,492,2'
+[paperclip] identify -format %wx%h '/var/folders/Pv/Pv3o+h-EFNi7ulORQ5rgPE+++TQ/-Tmp-/stream,492,0.JPG[0]'
+[paperclip] convert '/var/folders/Pv/Pv3o+h-EFNi7ulORQ5rgPE+++TQ/-Tmp-/stream,492,0.JPG[0]' -resize '100x100' '/var/folders/Pv/Pv3o+h-EFNi7ulORQ5rgPE+++TQ/-Tmp-/stream,492,0,492,3'
+[paperclip] identify -format %wx%h '/var/folders/Pv/Pv3o+h-EFNi7ulORQ5rgPE+++TQ/-Tmp-/stream,492,0.JPG[0]'
+[paperclip] convert '/var/folders/Pv/Pv3o+h-EFNi7ulORQ5rgPE+++TQ/-Tmp-/stream,492,0.JPG[0]' -resize '150x150>' '/var/folders/Pv/Pv3o+h-EFNi7ulORQ5rgPE+++TQ/-Tmp-/stream,492,0,492,4'
+[paperclip] identify -format %wx%h '/var/folders/Pv/Pv3o+h-EFNi7ulORQ5rgPE+++TQ/-Tmp-/stream,492,0.JPG[0]'
+[paperclip] convert '/var/folders/Pv/Pv3o+h-EFNi7ulORQ5rgPE+++TQ/-Tmp-/stream,492,0.JPG[0]' -resize '300x300>' '/var/folders/Pv/Pv3o+h-EFNi7ulORQ5rgPE+++TQ/-Tmp-/stream,492,0,492,5'
+[paperclip] identify -format %wx%h '/var/folders/Pv/Pv3o+h-EFNi7ulORQ5rgPE+++TQ/-Tmp-/stream,492,1.jpg[0]'
+[paperclip] convert '/var/folders/Pv/Pv3o+h-EFNi7ulORQ5rgPE+++TQ/-Tmp-/stream,492,1.jpg[0]' -resize '500x500>' '/var/folders/Pv/Pv3o+h-EFNi7ulORQ5rgPE+++TQ/-Tmp-/stream,492,1,492,0'
+[paperclip] identify -format %wx%h '/var/folders/Pv/Pv3o+h-EFNi7ulORQ5rgPE+++TQ/-Tmp-/stream,492,1.jpg[0]'
+[paperclip] convert '/var/folders/Pv/Pv3o+h-EFNi7ulORQ5rgPE+++TQ/-Tmp-/stream,492,1.jpg[0]' -resize '600x600>' '/var/folders/Pv/Pv3o+h-EFNi7ulORQ5rgPE+++TQ/-Tmp-/stream,492,1,492,1'
+[paperclip] identify -format %wx%h '/var/folders/Pv/Pv3o+h-EFNi7ulORQ5rgPE+++TQ/-Tmp-/stream,492,1.jpg[0]'
+[paperclip] convert '/var/folders/Pv/Pv3o+h-EFNi7ulORQ5rgPE+++TQ/-Tmp-/stream,492,1.jpg[0]' -resize '800x800>' '/var/folders/Pv/Pv3o+h-EFNi7ulORQ5rgPE+++TQ/-Tmp-/stream,492,1,492,2'
+[paperclip] identify -format %wx%h '/var/folders/Pv/Pv3o+h-EFNi7ulORQ5rgPE+++TQ/-Tmp-/stream,492,1.jpg[0]'
+[paperclip] convert '/var/folders/Pv/Pv3o+h-EFNi7ulORQ5rgPE+++TQ/-Tmp-/stream,492,1.jpg[0]' -resize '100x100' '/var/folders/Pv/Pv3o+h-EFNi7ulORQ5rgPE+++TQ/-Tmp-/stream,492,1,492,3'
+[paperclip] identify -format %wx%h '/var/folders/Pv/Pv3o+h-EFNi7ulORQ5rgPE+++TQ/-Tmp-/stream,492,1.jpg[0]'
+[paperclip] convert '/var/folders/Pv/Pv3o+h-EFNi7ulORQ5rgPE+++TQ/-Tmp-/stream,492,1.jpg[0]' -resize '150x150>' '/var/folders/Pv/Pv3o+h-EFNi7ulORQ5rgPE+++TQ/-Tmp-/stream,492,1,492,4'
+[paperclip] identify -format %wx%h '/var/folders/Pv/Pv3o+h-EFNi7ulORQ5rgPE+++TQ/-Tmp-/stream,492,1.jpg[0]'
+[paperclip] convert '/var/folders/Pv/Pv3o+h-EFNi7ulORQ5rgPE+++TQ/-Tmp-/stream,492,1.jpg[0]' -resize '300x300>' '/var/folders/Pv/Pv3o+h-EFNi7ulORQ5rgPE+++TQ/-Tmp-/stream,492,1,492,5'
+  [4;35;1mPhoto Create (0.5ms)[0m   [0mINSERT INTO "photos" ("created_at", "data_updated_at", "product_id", "updated_at", "data_content_type", "data_file_name", "data_file_size") VALUES('2010-08-19 08:29:12', '2010-08-19 08:29:10', 13, '2010-08-19 08:29:12', 'image/jpeg', 'DSC01416.JPG', 133054)[0m
+[paperclip] Saving attachments.
+[paperclip] saving /Users/sopira/rubydev/shop/public/system/datas/39/large/DSC01416.JPG
+[paperclip] saving /Users/sopira/rubydev/shop/public/system/datas/39/xlarge/DSC01416.JPG
+[paperclip] saving /Users/sopira/rubydev/shop/public/system/datas/39/xxlarge/DSC01416.JPG
+[paperclip] saving /Users/sopira/rubydev/shop/public/system/datas/39/thumb/DSC01416.JPG
+[paperclip] saving /Users/sopira/rubydev/shop/public/system/datas/39/small/DSC01416.JPG
+[paperclip] saving /Users/sopira/rubydev/shop/public/system/datas/39/original/DSC01416.JPG
+[paperclip] saving /Users/sopira/rubydev/shop/public/system/datas/39/medium/DSC01416.JPG
+  [4;36;1mPhoto Create (0.1ms)[0m   [0;1mINSERT INTO "photos" ("created_at", "data_updated_at", "product_id", "updated_at", "data_content_type", "data_file_name", "data_file_size") VALUES('2010-08-19 08:29:12', '2010-08-19 08:29:12', 13, '2010-08-19 08:29:12', 'image/jpeg', 'Besyst_320x200.jpg', 20106)[0m
+[paperclip] Saving attachments.
+[paperclip] saving /Users/sopira/rubydev/shop/public/system/datas/40/large/Besyst_320x200.jpg
+[paperclip] saving /Users/sopira/rubydev/shop/public/system/datas/40/xlarge/Besyst_320x200.jpg
+[paperclip] saving /Users/sopira/rubydev/shop/public/system/datas/40/xxlarge/Besyst_320x200.jpg
+[paperclip] saving /Users/sopira/rubydev/shop/public/system/datas/40/thumb/Besyst_320x200.jpg
+[paperclip] saving /Users/sopira/rubydev/shop/public/system/datas/40/small/Besyst_320x200.jpg
+[paperclip] saving /Users/sopira/rubydev/shop/public/system/datas/40/original/Besyst_320x200.jpg
+[paperclip] saving /Users/sopira/rubydev/shop/public/system/datas/40/medium/Besyst_320x200.jpg
+Redirected to http://localhost:3000/products/13/edit
+Completed in 1587ms (DB: 1) | 302 Found [http://localhost/products/13]
+
+
+Processing ProductsController#edit (for 127.0.0.1 at 2010-08-19 10:29:12) [GET]
+  Parameters: {"id"=>"13"}
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 13) [0m
+Rendering template within layouts/products
+Rendering products/edit
+  [4;36;1mPhoto Load (0.3ms)[0m   [0;1mSELECT * FROM "photos" WHERE ("photos".product_id = 13) [0m
+Rendered products/_photo (0.5ms)
+Completed in 23ms (View: 17, DB: 0) | 200 OK [http://localhost/products/13/edit]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-08-19 10:29:19) [GET]
+  [4;35;1mProduct Load (20.9ms)[0m   [0mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 2408ms (View: 2364, DB: 21) | 200 OK [http://localhost/products]
