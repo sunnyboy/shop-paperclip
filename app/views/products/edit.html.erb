@@ -1,0 +1,40 @@
+<div class="header"> <h1>Editing product</h1></div>
+
+
+<% form_for(@product, :html => {:multipart => true}) do |f| %>
+  <%= f.error_messages %>
+
+
+<div class="leftcol">
+	<div>
+		<%= f.label :name %><br />
+    	<%= f.text_field :name, :maxlength=>'10', :style=>'width: 150px;' %>
+		</br>
+ 		<%= f.label :price %><br />
+    	<%= f.text_field :price, :maxlength=>'10', :style=>'width: 150px;' %>
+	
+   		<%= add_photo(f) %>
+		<%= f.submit 'Update', :style=>'width: 120px;' %>
+	</div>
+    
+	<div >
+		<%= link_to 'Show', @product %> |
+		<%= link_to 'Back', products_path %>
+	</div>
+  </div>
+
+<% end %>
+
+<div class="content">
+	<% @product.photos.each do |photo| %>
+	<div class="thumbnail">
+  		<%= image_tag photo.data.url(:small) %>
+		<br/>
+		<%= link_to "Delete Photo", delete_photo_product_path(photo.id)  %> 
+	</div>
+	<% end %>
+</div>
+
+<div class="footer">
+	<%= debug(params)%>
+</div>

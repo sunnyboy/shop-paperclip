@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Products: <%= controller.action_name %></title>
+  <%= stylesheet_link_tag 'scaffold' %>
+  <%= javascript_include_tag :defaults %>
+
+	<style type="text/css">
+		.thumbnail {
+		float:left;		
+		width:150px;
+		height:150px;
+		margin:5px;
+		border: 5px solid grey;
+		background-color:#b0c4de;
+		padding:5px 10px;
+		-moz-border-radius: 10px; 
+		-webkit-border-radius: 10px; 
+		border-radius: 10px ;
+		}
+		
+		.navi {
+		position: relative;
+		text-align: center;
+		width:130px;
+		height:30px;
+		margin:3px;
+		border: 5px solid lightgrey;
+		background-color:pink;
+		padding:5px 10px;
+		-moz-border-radius: 10px; 
+		-webkit-border-radius: 10px; 
+		border-radius: 10px ;
+		}
+	</style>
+
+	<style type="text/css">
+	<!--
+	.container {	  
+		width: 				800px;
+		margin: 			10px auto;
+		background-color: 	#fff;
+		color: 				#333;
+		line-height: 		130%;
+	}
+	.header {
+	  background: lightgrey;
+	  width: 				780px;
+	  height: 				100%;
+	  padding:				5px 5px;
+	  margin:				5px;
+	  -moz-border-radius: 	10px; 
+	  -webkit-border-radius: 10px;
+	  border-radius: 		10px ;
+	}
+	.leftcol {
+	  background: 			#b0c4de;
+	  float: left;
+	  width: 				165px;
+	  height: 100%;
+	  padding:5px 5px;
+	  margin:5px;
+	  -moz-border-radius: 10px; 
+	  -webkit-border-radius: 10px;
+	  border-radius: 10px ;
+	}
+	.content {
+	  background: #fff;
+	  float: left;
+	  width: 585px;
+	  height: 100%x;
+	  padding:5px 5px;
+	  margin:5px;
+  	  border: 5px solid lightgrey;
+	  -moz-border-radius: 10px; 
+	  -webkit-border-radius: 10px;
+	  border-radius: 10px ;	
+	}
+	.footer {
+	  background: green;
+	  clear: both;
+	  width: 800px;
+	  height: 100px;
+	  padding:10px 10px;
+	  margin:11px;
+	  -moz-border-radius: 10px; 
+	  -webkit-border-radius: 10px;
+	  border-radius: 10px ;
+	}
+	-->
+	</style>
+</head>
+<body>
+
+<p style="color: green"><%= notice %></p>
+
+<%= yield %>
+
+</body>
+</html>
